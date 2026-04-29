@@ -1,4 +1,4 @@
-import datetime+
+import datetime
 
 year = input("Passing Year: ")
 name = input("Name of Student: ").upper()
