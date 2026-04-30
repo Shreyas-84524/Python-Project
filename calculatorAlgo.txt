@@ -1,31 +1,31 @@
 This algorithm outlines the logic and flow of the condensed calculator application.
 
-### **Calculator Algorithm**
+Calculator Algorithm
 
-1.  **Initialization:**
-    * Start the program and import the required GUI libraries (**Tkinter**).
-    * Define the visual styles (fonts, dimensions, and window title).
+1.  Initialization:
+     Start the program and import the required GUI libraries (Tkinter).
+     Define the visual styles (fonts, dimensions, and window title).
 
-2.  **Function Definitions:**
-    * **Input Logic (`press`):**
-        * If the user clicks "C", clear the input field entirely.
-        * Otherwise, append the value of the clicked button to the current text in the entry box.
-    * **Calculation Logic (`calculate`):**
-        * Retrieve the string from the entry box.
-        * Strip any previous results (text after an "=" sign) to isolate the mathematical expression.
-        * **Try:** Evaluate the expression numerically using the system's math parser.
-        * **Success:** Clear the entry box and display the full equation (e.g., `5 + 5 = 10`).
-        * **Failure:** If the expression is mathematically invalid (e.g., `5++5`), display an error message box.
+2.  Function Definitions:
+    Input Logic (`press`):
+         If the user clicks "C", clear the input field entirely.
+         Otherwise, append the value of the clicked button to the current text in the entry box.
+    Calculation Logic (`calculate`):
+         Retrieve the string from the entry box.
+         Strip any previous results (text after an "=" sign) to isolate the mathematical expression.
+         Try: Evaluate the expression numerically using the system's math parser.
+         Success: Clear the entry box and display the full equation (e.g., `5 + 5 = 10`).
+         Failure: If the expression is mathematically invalid (e.g., `5++5`), display an error message box.
 
-3.  **UI Construction:**
-    * Create the main application window.
-    * Add a **Title Label** and an **Entry Box** for user input/output.
-    * Create a **Button Grid**:
-        * Loop through a predefined list of calculator keys (`7, 8, 9, +, etc.`).
-        * Arrange buttons in a 4-column grid layout.
-        * Assign each button the `press` function with its respective value.
-    * Add a standalone **Calculate Button** to trigger the math logic.
-    * Add a **Footer** for branding/credits.
+3.  UI Construction:
+     Create the main application window.
+     Add a Title Label and an Entry Box for user input/output.
+     Create a Button Grid
+         Loop through a predefined list of calculator keys (`7, 8, 9, +, etc.`).
+         Arrange buttons in a 4-column grid layout.
+         Assign each button the `press` function with its respective value.
+     Add a standalone **Calculate Button** to trigger the math logic.
+     Add a **Footer** for branding/credits.
 
-4.  **Execution:**
-    * Launch the main event loop to keep the window open and listen for user interactions (clicks and typing).
+4.  Execution:
+     Launch the main event loop to keep the window open and listen for user interactions (clicks and typing).
