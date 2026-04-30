@@ -1,0 +1,19 @@
+Algorithm: Simple Calculator and Converter (Tkinter)
+1. Start the program and import required libraries (tkinter and messagebox).
+2. Create the main window using Tkinter and set the title, size, and layout frames.
+3. Define a function to clear the frame by destroying all existing widgets before switching screens.
+4. Display Calculator UI when selected:
+        Create input field and buttons (0–9, operators, clear).
+        Define a function to insert values into the input field.
+5. Perform calculation:
+        Take the user input expression.
+        Evaluate using eval() and display the result.
+        Show an error message if invalid input.
+6. Display Converter UI when selected:
+        Provide input fields for different conversions (kg→g, °C→°F, ft→cm).
+        Add a “Go” button for each conversion.
+7. Perform conversion:
+        Take numeric input from the user.
+        Apply the respective formula and display the result.
+        Show an error message for invalid input.
+8. Run the application loop using mainloop() to keep the GUI active until closed.
